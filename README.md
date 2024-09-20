@@ -10,3 +10,15 @@ Write a script that simulates a simple auto-scaling decision mechanism for a clo
 ### Requirements:
 1. Input: List of CPU utilisation percentages for the last 10 data points.
 2. Output: A decision (scale up, scale down, or maintain current).
+
+### Execution
+```shell
+docker build -t auto-scaling-script .
+docker run --rm auto-scaling-script
+```
+
+### Output Can also be viewed in GitHubActions
+* Navigate GitHub Actions
+* Click on `Python Syntax Check and Docker Build` in the leftside panel.
+* Select most recent successful run
+* Expand `Run Docker Container`
